@@ -23,7 +23,7 @@ You can use any tools you like to help you complete the challenge. So if you've 
 ## Links
 
 - Solution URL: [https://github.com/mayurDayal2000/profile-card-component](https://github.com/mayurDayal2000/profile-card-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://mayurdayal2000.github.io/profile-card-component/](https://mayurdayal2000.github.io/profile-card-component/)
 
 ## Built with
 
