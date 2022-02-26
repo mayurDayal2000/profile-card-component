@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans";
+}
+
+:root {
+  --dark_cyan: hsl(185, 75%, 39%);
+  --very_dark_desaturated_blue: hsl(229, 23%, 23%);
+  --dark_grayish_blue: hsl(227, 10%, 46%);
+  --dark_gray: hsl(0, 0%, 59%);
+  --white: hsl(0, 0%, 100%);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1.5rem;
+  display: grid;
+  place-content: center;
+  background-color: var(--dark_cyan);
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position-x: right 43vw, left 45vw;
+  background-position-y: bottom 48vh, top 40vh;
+}
+
+@media screen and (min-width: 998px) {
+  #root {
+    background-position-x: right 53vw, left 45vw;
+    background-position-y: bottom 18vh, top 40vh;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  border-radius: 1rem;
+  background-color: var(--white);
+}
+
+img[alt="background pattern-card"] {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+img[alt="victor's profile"] {
+  border-radius: 50%;
+  border: 0.4rem solid var(--white);
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile-content {
+  margin-top: 4.4rem;
+}
+
+.profile-content h1 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-align: center;
+  color: var(--very_dark_desaturated_blue);
+}
+
+h1 span {
+  font-weight: 400;
+  color: var(--dark_gray);
+  margin-left: 0.2rem;
+}
+
+address {
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-style: normal;
+  text-align: center;
+  color: var(--dark_grayish_blue);
+  margin: 5px 0 1.4rem;
+}
+
+hr {
+  color: var(--dark_gray);
+  opacity: 0.3;
+}
+
+ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1.2rem 0;
+}
+
+ul li {
+  font-weight: 700;
+  font-size: 0.625rem;
+  letter-spacing: 0.094rem;
+  color: var(--dark_gray);
+}
+
+ul strong {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--very_dark_desaturated_blue);
+  letter-spacing: normal;
+  display: block;
+}
+
+.attribution {
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  font-variant: var(--very_dark_desaturated_blue);
+}
+
+.attribution a {
+  color: var(--very_dark_desaturated_blue);
+}
+
+.attribution strong {
+  color: #a23663;
+}
